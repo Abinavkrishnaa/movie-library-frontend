@@ -8,7 +8,7 @@ const MovieSearch = () => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    const { data } = await axios.get(`https://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`);
+    const { data } = await axios.get(`https://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_OMDB_API_KEY}`);
     setResults(data.Search || []);
   };
 
